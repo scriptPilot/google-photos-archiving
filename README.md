@@ -8,7 +8,7 @@ Script to archive all items which are not added to any album to cleanup the phot
 
 1. Clone this repository:
 
-   `git clone git clone https://github.com/scriptPilot/google-photos-archiving`
+   `git clone https://github.com/scriptPilot/google-photos-archiving`
 
 2. Install all dependencies:
 
