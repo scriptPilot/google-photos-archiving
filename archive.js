@@ -42,7 +42,7 @@ async function log(message) {
 
 async function main() {
   // Start the browser
-  const browser = await getBrowser(true);
+  const browser = await getBrowser();
   log("Archving process started");
 
   // Open a new tab
