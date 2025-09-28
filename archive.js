@@ -49,14 +49,15 @@ async function main() {
   const page = await browser.newPage();
 
   // Process the items
-  let lastProcessedUrl = await page.url();
+  let lastProcessedUrl = "";
   while (lastProcessedUrl !== config.endUrl) {
     // For the first item, open the start url
-    if (processedItemsCount === 0) await page.goto(config.startUrl);
+    if (lastProcessedUrl === "") await page.goto(config.startUrl);
 
     // If forwarded to the url https://photos.google.com/, restart the archiving process
     if ((await page.url()) === "https://photos.google.com/") {
-      log("Archiving restartet");
+      log("Archiving interrupted");
+      lastProcessedUrl = "";
       await browser.close();
       main();
       return;
@@ -68,6 +69,15 @@ async function main() {
 
     // Get the item information
     const itemInfo = await getItemInfo(page);
+
+    // Item information is null, restart the archiving process
+    if (!itemInfo) {
+      log("Archiving interrupted");
+      lastProcessedUrl = "";
+      await browser.close();
+      main();
+      return;
+    }
 
     // Update the process status
     // Must be done before any key press
