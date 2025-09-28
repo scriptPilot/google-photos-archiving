@@ -34,6 +34,7 @@ Script to archive all items which are not added to any album to cleanup the phot
    ```yml
    startUrl: https://photos.google.com/photo/{first_item_to_process}
    endUrl: https://photos.google.com/photo/{last_item_to_process}
+   showBrowser: false
    ```
 
    The start url will be updated automatically in the config file by the script, so the script can be stopped and restartet at any time from the last processed item with an album assignment.
