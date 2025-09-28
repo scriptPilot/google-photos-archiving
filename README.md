@@ -8,18 +8,22 @@ Script to archive all items which are not added to any album to cleanup the phot
 
 1. Clone this repository:
 
-   `git clone https://github.com/scriptPilot/google-photos-archiving`
+   ```
+   git clone https://github.com/scriptPilot/google-photos-archiving
+   ```
 
-2. Install all dependencies:
+3. Install all dependencies:
 
    ```
    npm install
    npx playwright install --with-deps chromium
    ```
 
-3. Login to Google Photos:
+4. Login to Google Photos:
 
-   `node login`
+   ```
+   node login
+   ```
 
 ## Usage
 
@@ -34,4 +38,6 @@ Script to archive all items which are not added to any album to cleanup the phot
 
 2. Start the archiving process:
 
-   `node archive`
+   ```
+   node archive
+   ```
