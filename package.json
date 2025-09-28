@@ -1,0 +1,24 @@
+{
+  "name": "google-photos-archiving",
+  "version": "1.0.0",
+  "description": "Script to archive all items which are not added to any album to cleanup the photos overview.",
+  "type": "module",
+  "main": "archive.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scriptPilot/google-photos-archiving.git"
+  },
+  "author": "ScriptPilot <mail@scriptpilot.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scriptPilot/google-photos-archiving/issues"
+  },
+  "homepage": "https://github.com/scriptPilot/google-photos-archiving#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "playwright": "^1.35.1",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "user-agents": "^1.1.391"
+  }
+}
