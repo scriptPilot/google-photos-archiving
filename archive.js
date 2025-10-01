@@ -91,6 +91,7 @@ async function main() {
       await page.keyboard.down("Shift");
       await page.keyboard.press("KeyA");
       await page.keyboard.up("Shift");
+      await new Promise((resolve) => setTimeout(resolve, 500));
       archivedItemsCount++;
       log(`Archived item "${itemInfo.filename}" (${itemInfo.url})`);
 
@@ -98,6 +99,7 @@ async function main() {
       // The navigation to the following item must be done manually
     } else {
       await page.keyboard.press("ArrowRight");
+      await new Promise((resolve) => setTimeout(resolve, 500));
       skippedItemsCount++;
       log(`Skipped item "${itemInfo.filename}" (${itemInfo.url})`);
 
