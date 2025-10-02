@@ -1,8 +1,10 @@
 # Google Photos Archiving
 
-Script to archive all items which are not added to any album to cleanup the photos overview.
+Node.js script to archive all items which are not added to any album to cleanup the photos overview.
 
-[Archived items](https://photos.google.com/archive) can be unarchived or deleted in Google Fotos.
+[Archived items](https://photos.google.com/archive) can be unarchived or deleted manually in Google Fotos.
+
+Support for English and German user interface.
 
 ## Setup
 
