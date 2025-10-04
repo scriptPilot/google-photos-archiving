@@ -1,7 +1,7 @@
 {
   "name": "google-photos-archiving",
   "version": "1.1.0",
-  "description": "Script to archive all items which are not added to any album to cleanup the photos overview.",
+  "description": "Node.js script to archive all items which are not added to any album to cleanup the photos overview.",
   "type": "module",
   "main": "archive.js",
   "repository": {
