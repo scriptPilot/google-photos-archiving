@@ -8,22 +8,24 @@ Support for English and German user interface.
 
 ## Setup
 
-1. Install [Node.js](https://nodejs.org/)
+1. Install [Google Chrome](https://www.google.com/chrome/)
 
-2. Clone this repository:
+2. Install [Node.js](https://nodejs.org/)
+
+3. Clone this repository:
 
    ```
    git clone https://github.com/scriptPilot/google-photos-archiving
    ```
 
-3. Install all dependencies:
+4. Install all dependencies:
 
    ```
    npm install
    npx playwright install --with-deps chromium
    ```
 
-4. Login to Google Photos:
+5. Login to Google Photos:
 
    ```
    node login
