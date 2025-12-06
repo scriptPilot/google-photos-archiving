@@ -38,10 +38,12 @@ Support for English and German user interface.
    ```yml
    startUrl: https://photos.google.com/photo/{first_item_to_process}
    endUrl: https://photos.google.com/photo/{last_item_to_process}
-   showBrowser: false
+   showBrowser: true
    ```
 
    The start url will be updated automatically in the config file by the script, so the script can be stopped and restartet at any time from the last processed item with an album assignment.
+
+   ⚠️ The script might not work with `showBrowser: false` due to headless browser constraints.
 
 2. Start the archiving process:
 
